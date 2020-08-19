@@ -112,8 +112,6 @@ export default {
           data.title = [...data.title, router.meta.title]
 
           if (router.redirect !== 'noRedirect') {
-            // only push the routes with title
-            // special case: need to exclude parent router without redirect
             res.push(data)
           }
         }
